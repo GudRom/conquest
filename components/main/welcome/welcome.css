@@ -1,0 +1,117 @@
+.welcome {
+  background-color: #fdfdfb;
+  position: relative;
+  display: flex;
+  height: 768px;
+}
+.welcome__info {
+  position: relative;
+  z-index: 2;
+  max-width: 350px;
+  margin: 236px 0 0 185px;
+}
+.welcome__text-box {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  line-height: 1.33;
+  color: #1B1A17;
+}
+.welcome__header {
+  font-size: 3.214rem;
+  font-weight: 400;
+  position: relative;
+  margin: 0;
+}
+.welcome__header::before {
+  content: "";
+  border-bottom: 1px solid #8b8371;
+  position: absolute;
+  left: -65px;
+  bottom: 25px;
+  width: 50px;
+}
+.welcome__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.143rem;
+  font-weight: 400;
+  margin: 0;
+}
+.welcome__subtitle {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 260px;
+  color: rgba(27, 26, 23, 0.82);
+  margin: 30px 0 60px;
+}
+.welcome__button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.857rem;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2.08em 3.19em;
+  border: none;
+  cursor: pointer;
+  background-color: #444240;
+  color: white;
+}
+.welcome__button:hover {
+  opacity: 0.8;
+}
+.welcome__button:active {
+  background-color: #8b8371;
+}
+.welcome__text-info {
+  position: absolute;
+  z-index: 2;
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+  font-size: 1.14rem;
+  line-height: 1.375;
+  color: #1B1A17;
+  margin: 0;
+}
+.welcome__text-info_left {
+  top: 138px;
+  right: 53.07vw;
+}
+.welcome__text-info_left::after {
+  content: "";
+  border-bottom: 1px solid #8b8371;
+  position: absolute;
+  width: 50px;
+  bottom: 12px;
+  right: -65px;
+}
+.welcome__text-info_right {
+  right: 8.346vw;
+  bottom: 116px;
+}
+.welcome__text-info_right::before {
+  content: "";
+  border-bottom: 1px solid #8b8371;
+  position: absolute;
+  width: 50px;
+  bottom: 12px;
+  left: -65px;
+}
+.welcome__main-img {
+  position: absolute;
+  z-index: 1;
+  top: -11px;
+  right: 14.5vw;
+}
+.welcome__background-ellipse {
+  position: absolute;
+  width: 496px;
+  height: 100%;
+  z-index: 0;
+  right: 29.36vw;
+  background-image: url("../../../images/service/ellipse.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=welcome.css.map */

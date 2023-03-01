@@ -1,0 +1,61 @@
+@import "../utils/variables.scss", "../utils/mixins.scss";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-gray-color;
+  height: 275px;
+  font-family: "Roboto", sans-serif;
+  padding: 0 13.47vw;
+  &__list {
+    @include clearListStyle();
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__list-item {
+    margin-right: 118px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__service-list {
+    @include clearListStyle();
+  }
+
+  &__logo {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.14;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 33px;
+  }
+  &__service-list-item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__service-link {
+    font-weight: 400;
+    font-size: .857rem;
+    line-height: 1.17;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+
+    &:hover {
+      color: $bg-milk-color;
+    }
+  }
+}

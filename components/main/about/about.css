@@ -1,0 +1,36 @@
+.about {
+  position: relative;
+  height: 519px;
+  background-color: #fdfdfb;
+  overflow: hidden;
+  padding: 52px 0 0 12.96vw;
+  box-sizing: border-box;
+}
+.about__bg-left-part {
+  position: absolute;
+  z-index: 0;
+  background-color: #f7f5ef;
+  width: 468px;
+  height: 519px;
+  left: 0;
+  top: 0;
+}
+.about__circle-1 {
+  position: absolute;
+  width: 365px;
+  height: 365px;
+  border: 1px solid #d4b098;
+  border-radius: 50%;
+  z-index: 1;
+  right: -175px;
+  top: -150px;
+}
+.about__circle-2 {
+  position: absolute;
+  width: 745px;
+  height: 745px;
+  border: 1px solid #d4b098;
+  border-radius: 50%;
+  top: 0;
+  right: -555px;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,76 @@
+@import "../../../utils/variables.scss", "../../../utils/mixins.scss";
+
+.product {
+  background-color: $bg-milk-color;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 34px 21px 34px 36px;
+  &__brand-text {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(27, 26, 23, 0.82);
+    margin: 0 0 6px;
+  }
+  &__cost {
+    position: relative;
+    font-family: "Prata", sans-serif;
+    font-size: 0.857rem;
+    line-height: 1.33;
+    color: rgba(27, 26, 23, 0.82);
+    margin: 0;
+    width: fit-content;
+    &::after {
+      content: "";
+      @include addImg("../../../../images/service/ruble.svg");
+      width: 8px;
+      height: 10px;
+      position: absolute;
+      top: 1px;
+      right: -12px;
+    }
+  }
+  &__img-box {
+    position: relative;
+    margin: 0 0 15px;
+  }
+  &__link-more-info {
+    position: relative;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.14rem;
+    line-height: 1.313;
+    text-decoration: none;
+    color: $title-color;
+    margin-left: 55px;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      color: #d4b098;
+    }
+
+    &::before {
+      content: "";
+      border-bottom: 1px solid #8b8371;
+      position: absolute;
+      width: 30px;
+      bottom: 7px;
+      left: -48px;
+    }
+  }
+
+  &__img-ellipse {
+    @include addImg("../../../../images/service/ellipse-card.svg");
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}

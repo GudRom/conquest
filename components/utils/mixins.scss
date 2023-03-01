@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+@mixin bigRectangleBtn() {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.857rem;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2.08em 3.19em;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin clearListStyle() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin addImg($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin btnWithImg($url) {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  @include addImg($url);
+}
+
+@mixin title() {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.143rem;
+  font-weight: 400;
+  margin: 0;
+}

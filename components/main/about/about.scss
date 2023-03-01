@@ -1,0 +1,39 @@
+@import "../../utils/variables.scss", "../../utils/mixins.scss";
+
+.about {
+  position: relative;
+  height: 519px;
+  background-color: $bg-milk-color;
+  overflow: hidden;
+  padding: 52px 0 0 12.96vw;
+  box-sizing: border-box;
+
+  &__bg-left-part {
+    position: absolute;
+    z-index: 0;
+    background-color: $bg-dark-milk-color;
+    width: 468px;
+    height: 519px;
+    left: 0;
+    top: 0;
+  }
+  &__circle-1 {
+    position: absolute;
+    width: 365px;
+    height: 365px;
+    border: 1px solid #d4b098;
+    border-radius: 50%;
+    z-index: 1;
+    right: -175px;
+    top: -150px;
+  }
+  &__circle-2 {
+    position: absolute;
+    width: 745px;
+    height: 745px;
+    border: 1px solid #d4b098;
+    border-radius: 50%;
+    top: 0;
+    right: -555px;
+  }
+}

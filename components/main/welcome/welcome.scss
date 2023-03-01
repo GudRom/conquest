@@ -1,0 +1,113 @@
+@import "../../utils/variables.scss", "../../utils/mixins.scss";
+
+.welcome {
+  background-color: $bg-milk-color;
+  position: relative;
+  display: flex;
+  height: 768px;
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    max-width: 350px;
+    margin: 236px 0 0 185px;
+  }
+  &__text-box {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    color: $title-color;
+  }
+  &__header {
+    font-size: 3.214rem;
+    font-weight: 400;
+    position: relative;
+    margin: 0;
+
+    &::before {
+      content: "";
+      border-bottom: 1px solid #8b8371;
+      position: absolute;
+      left: -65px;
+      bottom: 25px;
+      width: 50px;
+    }
+  }
+
+  &__title {
+    @include title();
+  }
+
+  &__subtitle {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 260px;
+    color: rgba(27, 26, 23, 0.82);
+    margin: 30px 0 60px;
+  }
+  &__button {
+    @include bigRectangleBtn();
+    background-color: $dark-gray-color;
+    color: white;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      background-color: #8b8371;
+    }
+  }
+  &__text-info {
+    position: absolute;
+    z-index: 2;
+    font-family: "Prata", sans-serif;
+    font-weight: 400;
+    font-size: 1.14rem;
+    line-height: 1.375;
+    color: $title-color;
+    margin: 0;
+
+    &_left {
+      top: 138px;
+      right: 53.07vw;
+
+      &::after {
+        content: "";
+        border-bottom: 1px solid #8b8371;
+        position: absolute;
+        width: 50px;
+        bottom: 12px;
+        right: -65px;
+      }
+    }
+
+    &_right {
+      right: 8.346vw;
+      bottom: 116px;
+
+      &::before {
+        content: "";
+        border-bottom: 1px solid #8b8371;
+        position: absolute;
+        width: 50px;
+        bottom: 12px;
+        left: -65px;
+      }
+    }
+  }
+  &__main-img {
+    position: absolute;
+    z-index: 1;
+    top: -11px;
+    right: 14.5vw;
+  }
+  &__background-ellipse {
+    position: absolute;
+    width: 496px;
+    height: 100%;
+    z-index: 0;
+    right: 29.36vw;
+    @include addImg("../../../images/service/ellipse.svg");
+  }
+}

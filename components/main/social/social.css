@@ -1,0 +1,79 @@
+.social {
+  height: 631px;
+  display: flex;
+  align-items: center;
+  padding: 0 98px;
+  justify-content: space-between;
+}
+.social__info-box {
+  margin-right: 70px;
+}
+.social__text-box {
+  margin-bottom: 120px;
+}
+.social__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.143rem;
+  font-weight: 400;
+  margin: 0;
+}
+.social__text {
+  max-width: 376px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.14rem;
+  line-height: 1.5;
+  color: #444240;
+  margin: 40px 0 0;
+}
+.social__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social__list-item {
+  margin-right: 18px;
+}
+.social__list-item:last-child {
+  margin-right: 0;
+}
+.social__link:hover {
+  opacity: 0.8;
+}
+.social__icon {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.social__img-box {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  gap: 10px;
+  align-content: center;
+}
+.social__img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.social__img_1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.social__img_2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.social__img_3 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}/*# sourceMappingURL=social.css.map */

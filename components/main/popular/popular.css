@@ -1,0 +1,49 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 98px;
+  height: 720px;
+}
+.popular__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.143rem;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 70px;
+}
+.popular__catalog-link {
+  align-self: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.14rem;
+  line-height: 1.1875;
+  text-decoration: none;
+  margin: 26px 0;
+  color: #444240;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #c4c0b6;
+}
+.popular__catalog-link:hover {
+  opacity: 0.8;
+  border-color: darkgoldenrod;
+}
+.popular__catalog-link:active {
+  color: #d4b098;
+}
+.popular__product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.popular__product-list-item {
+  margin-right: 26px;
+  width: 370px;
+  height: 467px;
+}
+.popular__product-list-item:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=popular.css.map */

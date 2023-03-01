@@ -1,0 +1,80 @@
+.carousel {
+  position: relative;
+  z-index: 2;
+}
+.carousel__page {
+  display: flex;
+  align-items: center;
+}
+.carousel__img {
+  width: 521px;
+  height: 414px;
+}
+.carousel__info-box {
+  max-width: 376px;
+  margin-left: 70px;
+}
+.carousel__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.14rem;
+  line-height: 1.5;
+  color: #444240;
+}
+.carousel__title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.143rem;
+  font-weight: 400;
+  margin: 0;
+}
+.carousel__button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 0.857rem;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 2.08em 3.19em;
+  border: none;
+  cursor: pointer;
+  background-color: #d4b098;
+  color: white;
+}
+.carousel__button:hover {
+  opacity: 0.8;
+}
+.carousel__button:active {
+  background-color: #444240;
+}
+.carousel__pagination {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 344px;
+}
+.carousel__current-page {
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+  font-size: 0.857rem;
+  line-height: 1.33;
+  color: rgba(27, 26, 23, 0.82);
+  margin: 0 20px;
+}
+.carousel__control-btn {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-image: url("../../../../images/service/arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px;
+  height: 10px;
+}
+.carousel__control-btn_backward {
+  transform: rotate(180deg);
+}
+.carousel__control-btn:hover {
+  filter: drop-shadow(0px 0px 1px #f74851);
+}/*# sourceMappingURL=carousel.css.map */

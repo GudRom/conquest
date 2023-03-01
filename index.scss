@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
+
+@import url(./components/header/header.css);
+@import url(./components/main/welcome/welcome.css);
+@import url(./components/main/popular/popular.css);
+@import url(./components/main/popular/product/product.css);
+@import url(./components/main/about/about.css);
+@import url(./components/main/about/carousel/carousel.css);
+@import url(./components/main/social/social.css);
+@import url(./components/footer/footer.css);
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+

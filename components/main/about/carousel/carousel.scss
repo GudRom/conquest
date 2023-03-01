@@ -1,0 +1,72 @@
+@import "../../../utils/variables.scss", "../../../utils/mixins.scss";
+
+.carousel {
+  position: relative;
+  z-index: 2;
+  &__page {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 521px;
+    height: 414px;
+  }
+  &__info-box {
+    max-width: 376px;
+    margin-left: 70px;
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.14rem;
+    line-height: 1.5;
+    color: #444240;
+  }
+
+  &__title {
+    @include title();
+  }
+
+  &__button {
+    @include bigRectangleBtn();
+    background-color: #d4b098;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      background-color: $dark-gray-color;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 344px;
+  }
+
+  &__current-page {
+    font-family: "Prata", sans-serif;
+    font-weight: 400;
+    font-size: 0.857rem;
+    line-height: 1.33;
+    color: rgba(27, 26, 23, 0.82);
+    margin: 0 20px;
+  }
+
+  &__control-btn {
+    @include btnWithImg("../../../../images/service/arrow-right.svg");
+    width: 5px;
+    height: 10px;
+
+    &_backward {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      filter: drop-shadow(0px 0px 1px #f74851);
+    }
+  }
+}
